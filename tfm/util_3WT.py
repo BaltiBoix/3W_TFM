@@ -131,7 +131,7 @@ class CustomDataGen(tf.keras.utils.Sequence):
         
         ds = self.__get_ds(self.df['path'][ifile], Norm=False)
         
-        fig, axs = plt.subplots(nrows=len(flist)+1, figsize=(10, 12), sharex=True)
+        fig, axs = plt.subplots(nrows=len(self.X_col)+1, figsize=(10, 12), sharex=True)
         
         fig.suptitle(self.df['path'][ifile])
 
