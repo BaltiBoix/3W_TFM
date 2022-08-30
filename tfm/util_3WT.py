@@ -100,7 +100,7 @@ class d3w():
     def drawn(self):
         return self.df[self.df['origin']=='D'].drop(columns=['origin']).reset_index(drop=True)
 
-################################################################################################
+##################################################################################################
 
 class CustomDataGen(tf.keras.utils.Sequence):
     '''https://medium.com/analytics-vidhya/write-your-own-custom-data-generator-for-tensorflow-keras-1252b64e41c3'''
@@ -224,7 +224,7 @@ class CustomDataGen(tf.keras.utils.Sequence):
     def __Norm(self, ds, nas_v=0):
         dn = ds.fillna(value=nas_v)
         sc = sklearn.preprocessing.StandardScaler()
-        dn = pd.DataFrame(sc.fit_transform(dn), 
+        dn = pd.DataFrame(sc.fit_transform(dn.values), 
                                            index=dn.index, 
                                            columns=dn.columns)
         dn[(self.y_col, 'mode')] = ds[(self.y_col, 'mode')]
