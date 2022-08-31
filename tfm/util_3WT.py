@@ -56,6 +56,13 @@ class d3w():
                                                         random_state=200560, 
                                                         shuffle=True, 
                                                         stratify=tmp0_df['label'])
+        
+        if val_size == 0:
+            print('Instances Train: {}  Test: {}'.format(len(tmp_df.index), 
+                                                         len(test_df.index)))
+            return tmp_df.reset_index(drop=True),\
+                   test_df.reset_index(drop=True)
+        
         train_df, val_df = sklearn.model_selection.train_test_split(tmp_df, test_size=val_size, 
                                                         random_state=200560, 
                                                         shuffle=True, 
