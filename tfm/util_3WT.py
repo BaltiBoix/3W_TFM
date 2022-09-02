@@ -270,7 +270,8 @@ class CustomDataGen(tf.keras.utils.Sequence):
     
     def reset_ts(self):
         for p in self.df['path']:
-            self.tkl_path(p).unlink(missing_ok=True)
+            if self.tkl_path(p).exists():
+                self.tkl_path(p).unlink()
     
     def __get_output(self, y):
         
