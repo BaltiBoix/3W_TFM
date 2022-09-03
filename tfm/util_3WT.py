@@ -117,7 +117,7 @@ class CustomDataGen(tf.keras.utils.Sequence):
                  seq_length=15,
                  tmp_path='/tmp'):
         
-        self.df = df.copy()
+        self.df = df.copy().reset_index()
         self.X_col = X_col
         self.y_col = y_col
         self.categories = categories
