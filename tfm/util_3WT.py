@@ -15,6 +15,9 @@ import sklearn.model_selection
 from sklearn.metrics import classification_report
 
 class d3w():
+    '''
+    Class for managing Petrobras 3W dataset
+    '''
     def __init__(self, path3w):
         self.path3w = path3w
         self.df = self.__load_df()
@@ -45,12 +48,22 @@ class d3w():
                         d['label'].append(label)
                         d['path'].append(fp)
                         d['nlines'].append(self.file_len(fp)-1)
-                        #d['nlines'].append(1)
+                        
         return pd.DataFrame(d)
     
-    def split(self, real=True, simul=True, drawn=True, test_size=0.2, val_size=0.1):
+    def split(self, real=True, simul=True, drawn=True, test_size=0.2, val_size=0.1, sample_n=None):
         
         tmp0_df = self.get_df(real, simul, drawn)
+        
+        if sample_n is not None:
+            N = len(tmp0_df.index)
+            if N > sample_n:
+                ds_list = []
+                for i, ni in tmp0_df.groupby('label').count().nlines.items():
+                    ns = ni*sample_n//N
+                    ds_list.append(tmp0_df[tmp0_df.label == i].sample(n=ns, random_state=200560))
+                tmp0_df = pd.concat(ds_list)            
+        
         tmp_df, test_df = sklearn.model_selection.train_test_split(tmp0_df, 
                                                         test_size=test_size, 
                                                         random_state=200560, 
@@ -110,7 +123,11 @@ class d3w():
 ##################################################################################################
 
 class CustomDataGen(tf.keras.utils.Sequence):
-    '''https://medium.com/analytics-vidhya/write-your-own-custom-data-generator-for-tensorflow-keras-1252b64e41c3'''
+    '''
+    Generator for Keras models of 3W dataset based on:
+    https://medium.com/analytics-vidhya/write-your-own-custom-data-generator-for-tensorflow-keras-1252b64e41c3
+    
+    '''
     
     def __init__(self, df, X_col, y_col, categories,
                  batch_size,
