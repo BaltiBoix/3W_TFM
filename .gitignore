@@ -10,7 +10,6 @@ __pycache__/
 
 # 3W toolkit documentation
 html/
-*.html
 
 # VS Code configuration
 .vscode/
