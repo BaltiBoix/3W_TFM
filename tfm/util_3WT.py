@@ -301,6 +301,7 @@ class CustomDataGen(tf.keras.utils.Sequence):
 
         if p != self.file:
             self.__get_dt(p)
+            self.file = p
 
         return self.ts[j]
     
