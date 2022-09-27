@@ -1,6 +1,7 @@
 # 3W_TFM
 This is a fork of the [Petrobrass 3W dataset](README_original.md).  
-# UOC Data Science Master TFM (Final Master Project)
+# UOC Data Science Master TFM (Final Master Project)  
+  First semester course 2022/2023
 ## Aim of the project
   Classify the undesirable events that occur in offshore oil wells reported in the 3W dataset (Petrobras) using the techniques and algorithms of machine Learning.
 ## Steps
