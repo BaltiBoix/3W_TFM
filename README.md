@@ -17,10 +17,10 @@ This is a fork of the [Petrobrass 3W dataset](README_original.md).
 A Data Generator class (CustomDataGen) has been developed for every type of model.  
 ### Modeling  
 #### Keras models  
-  A Python class has been developed to fit, evaluate and score different neural networks. The most promising are CNN's (Conv1D layers) and RNN's (LSTM layers). See [keras_model_complex](tfm/keras_model_complex.html).
+  A Python class has been developed to fit, evaluate and score different neural networks. The most promising are CNN's (Conv1D layers) and RNN's (LSTM layers). See [keras_model_complex](tfm/keras_model_complex.ipynb).
 #### Sklearn models
   Some models that accept incremental learning has been tried not very succesfully. See [multiclass_model](tfm/multiclass_model.ipynb).  
-  A better solution has been first preprocess the dataset through a ipca model (incremental PCA) and compress the data into a much smaller datasets that fits in memory and allow the use of a greater variety of models. See [ipca_model](tfm/ipca_model.html) for a Random Forest.  
+  A better solution has been first preprocess the dataset through a ipca model (incremental PCA) and compress the data into a much smaller datasets that fits in memory and allow the use of a greater variety of models. See [ipca_model](tfm/ipca_model.ipynb) for a Random Forest.  
 #### River models  
   [River](https://riverml.xyz/) is a library to build online machine learning models.  
   
