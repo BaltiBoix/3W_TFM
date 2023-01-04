@@ -1,0 +1,68 @@
+digraph {
+	graph [forcelabels=true overlap=false splines=ortho]
+	node [fontname=trebuchet fontsize=11 margin="0.1,0.0" penwidth=1.2 shape=box]
+	edge [center=true fontsize="7  " penwidth=0.6]
+	0 [label="T-TPT_rSEM" fillcolor="#e5823b" style=filled]
+	1 [label="P-JUS-CKGL_rMin" fillcolor="#e68743" style=filled]
+	0 -> 1 [xlabel="≤ 0.2643"]
+	2 [label="P-JUS-CKGL_rMin" fillcolor="#e68640" style=filled]
+	1 -> 2 [xlabel="≤ 1.5673"]
+	3 [label="P-PDG_rSEM" fillcolor="#e58139" style=filled]
+	2 -> 3 [xlabel="≤ -1.6159"]
+	4 [label=QGL_rSEM fillcolor="#e5833c" style=filled]
+	3 -> 4 [xlabel="≤ 0.1926"]
+	7 [label=QGL_rMin fillcolor="#fbeade" style=filled]
+	3 -> 7 [xlabel="> 0.1926"]
+	10 [label="T-JUS-CKP_rSEM" fillcolor="#e5833d" style=filled]
+	2 -> 10 [xlabel="> -1.6159"]
+	11 [label=QGL_rSEM fillcolor="#e68641" style=filled]
+	10 -> 11 [xlabel="≤ 0.3268"]
+	14 [label=QGL_rMin fillcolor="#3ea0e6" style=filled]
+	10 -> 14 [xlabel="> 0.3268"]
+	17 [label="P-JUS-CKGL_rMin" fillcolor="#55abe9" style=filled]
+	1 -> 17 [xlabel="> 1.5673"]
+	18 [label="Class 0.0:
+	P(0.0) = 0.5
+	P(3.0) = 0.5
+samples: 1641" fillcolor="#fffdfc" style=filled]
+	17 -> 18 [xlabel="≤ 1.6176"]
+	19 [label="P-JUS-CKGL_rMin" fillcolor="#3a9ee5" style=filled]
+	17 -> 19 [xlabel="> 1.6176"]
+	20 [label="P-JUS-CKGL_rSEM" fillcolor="#e5823a" style=filled]
+	19 -> 20 [xlabel="≤ 1.6675"]
+	23 [label="T-JUS-CKP_rSEM" fillcolor="#e5823b" style=filled]
+	19 -> 23 [xlabel="> 1.6675"]
+	26 [label="P-JUS-CKGL_rMin" fillcolor="#f9e4d5" style=filled]
+	0 -> 26 [xlabel="> 0.2643"]
+	27 [label="P-JUS-CKGL_rMin" fillcolor="#e5813a" style=filled]
+	26 -> 27 [xlabel="≤ 0.2727"]
+	28 [label="Class 3.0:
+	P(0.0) = 0.1
+	P(3.0) = 0.9
+samples: 1642" fillcolor="#62b1ea" style=filled]
+	27 -> 28 [xlabel="≤ -2.3416"]
+	29 [label="P-PDG_rSEM" fillcolor="#e58139" style=filled]
+	27 -> 29 [xlabel="> -2.3416"]
+	30 [label="Class 0.0:
+	P(0.0) = 0.7
+	P(3.0) = 0.3
+samples: 1299" fillcolor="#f7d6bf" style=filled]
+	29 -> 30 [xlabel="≤ 0.0602"]
+	31 [label=QGL_rSEM fillcolor="#3e9fe6" style=filled]
+	29 -> 31 [xlabel="> 0.0602"]
+	34 [label="T-JUS-CKP_rSEM" fillcolor="#4fa8e8" style=filled]
+	26 -> 34 [xlabel="> 0.2727"]
+	35 [label="Class 0.0:
+	P(0.0) = 1.0
+samples: 449" fillcolor="#e58139" style=filled]
+	34 -> 35 [xlabel="≤ 0.104"]
+	36 [label="P-JUS-CKGL_rMin" fillcolor="#48a4e7" style=filled]
+	34 -> 36 [xlabel="> 0.104"]
+	37 [label="Class 3.0:
+	P(0.0) = 0.1
+	P(3.0) = 0.9
+samples: 620" fillcolor="#6ab5eb" style=filled]
+	36 -> 37 [xlabel="≤ 0.9607"]
+	38 [label=QGL_rMin fillcolor="#f2c09d" style=filled]
+	36 -> 38 [xlabel="> 0.9607"]
+}
