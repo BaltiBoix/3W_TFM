@@ -24,12 +24,17 @@ A Data Generator class (CustomDataGen) has been developed for every type of mode
 #### River models  
   [River](https://riverml.xyz/) is a library to build online machine learning models.  
   
-  Two type of models have been implemented:
+  Preprocessing is carried out using River routines:
   *  Trying to emulate a [SCADA](https://es.wikipedia.org/wiki/SCADA) that send to the model one row every second. Data is preprocessed (scaled), incremental rolling time window statistics are calculated and fed to an incremental learning model. What's not very realistic is using an abnormal class label for each row as this classification has been assessed by an expert in batch. The score of the test dataset is poor and the fitting process is very slow.  
-  *  Using minute averages computed with pandas is much faster but less realistic. A python class for rolling window values has been developed that is used along with river stats calculations. An Hoeffding Tree Classifier has been trained. See [river_window_model](tfm/river_window_model.ipynb).
+  *  Using minute averages computed with pandas is much faster but less realistic. A python class for rolling window values has been developed that is used along with river stats calculations.  
+  *  Only real data sorted by date has been used. The only abnormal situation with enough real data is Flow Instability (class 4). 
+  
+  An Hoeffding Tree Classifier has been used. Is a multiclass classifier.  
+  
+  A drift detector has been introduced in the stream learning process trying to detect concept drift in the flow of data that advices to reinitialize the model been trained. See [river_window_model](tfm/river_tfm5_4.ipynb).
  
- ### Next steps
-   I'm at start of the project. Expect a lot of updates and additions.  
+ ### Docs
+   [The final TFM report]() in PDF format (Spanish).  
    
 
   
