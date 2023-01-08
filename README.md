@@ -5,6 +5,8 @@ This is a fork of the [Petrobrass 3W dataset](README_original.md).
 ## Aim of the project
   Classify the undesirable events that occur in offshore oil wells reported in the 3W dataset (Petrobras) using the techniques and algorithms of machine Learning.
 ## Steps
+### Exploratory Data Analysis
+  See [EDA](tfm/EDA.ipynb)
 ### Preprocessing
   The dataset is composed of 8 folders, one for every situation of the process (one normal and 8 abnormal). Every folder has multiple files containing a time series of meter readings and a class label.  
     
