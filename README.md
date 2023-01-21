@@ -14,7 +14,7 @@ This is a fork of the [Petrobrass 3W dataset](README_original.md).
     
   Two main assumptions has been made prior to fitting model to the data:  
   *  Minute averages instead of instantaneous (per second) data are used. It seems that the dynamics of the process are not so fast.
-  *  The situations can only be assessed looking at a time window of around 15 minutes (2D time x feature).  
+  *  The situations can only be assessed looking at a time window of around 30 minutes (2D time x feature).  
   
 A Data Generator class (CustomDataGen) has been developed for every type of model.  
 ### Modeling  
