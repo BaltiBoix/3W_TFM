@@ -38,6 +38,7 @@ A Data Generator class (CustomDataGen) has been developed for every type of mode
  ### Docs
    [The final TFM report](tfm/Docs/TFM.pdf) in PDF format (Spanish).  
    
+   [The final TFM slide presentation](tfm/Docs/TFM_slides.pdf) in PDF format (Spanish).     
 
   
-***  The tfm folder contains the ypnb files for training various keras models with the dataset.
+***  The tfm folder contains the ypnb files for training various models with the dataset.
