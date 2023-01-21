@@ -33,7 +33,7 @@ A Data Generator class (CustomDataGen) has been developed for every type of mode
   
   An Hoeffding Tree Classifier has been used. Is a multiclass classifier.  
   
-  A drift detector has been introduced in the stream learning process trying to detect concept drift in the flow of data that advices to reinitialize the model been trained. See [river_window_model](tfm/river_tfm5_4.ipynb).
+  A drift detector has been introduced in the stream learning process trying to detect concept drift in the flow of data that advices to reinitialize the model been trained. See [river_window_model](tfm/river_tfm5_4.ipynb) ([html](https://htmlpreview.github.io/?tfm/river_tfm5_4.html).
  
  ### Docs
    [The final TFM report](tfm/Docs/TFM.pdf) in PDF format (Spanish).  
