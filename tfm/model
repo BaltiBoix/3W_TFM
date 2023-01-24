@@ -2,67 +2,82 @@ digraph {
 	graph [forcelabels=true overlap=false splines=ortho]
 	node [fontname=trebuchet fontsize=11 margin="0.1,0.0" penwidth=1.2 shape=box]
 	edge [center=true fontsize="7  " penwidth=0.6]
-	0 [label="T-TPT_rSEM" fillcolor="#e5823b" style=filled]
-	1 [label="P-JUS-CKGL_rMin" fillcolor="#e68743" style=filled]
-	0 -> 1 [xlabel="≤ 0.2643"]
-	2 [label="P-JUS-CKGL_rMin" fillcolor="#e68640" style=filled]
-	1 -> 2 [xlabel="≤ 1.5673"]
-	3 [label="P-PDG_rSEM" fillcolor="#e58139" style=filled]
-	2 -> 3 [xlabel="≤ -1.6159"]
-	4 [label=QGL_rSEM fillcolor="#e5833c" style=filled]
-	3 -> 4 [xlabel="≤ 0.1926"]
-	7 [label=QGL_rMin fillcolor="#fbeade" style=filled]
-	3 -> 7 [xlabel="> 0.1926"]
-	10 [label="T-JUS-CKP_rSEM" fillcolor="#e5833d" style=filled]
-	2 -> 10 [xlabel="> -1.6159"]
-	11 [label=QGL_rSEM fillcolor="#e68641" style=filled]
-	10 -> 11 [xlabel="≤ 0.3268"]
-	14 [label=QGL_rMin fillcolor="#3ea0e6" style=filled]
-	10 -> 14 [xlabel="> 0.3268"]
-	17 [label="P-JUS-CKGL_rMin" fillcolor="#55abe9" style=filled]
-	1 -> 17 [xlabel="> 1.5673"]
-	18 [label="Class 0.0:
+	0 [label="P-MON-CKP_rmean" fillcolor="#ea985d" style=filled]
+	1 [label="P-JUS-CKGL_rMin" fillcolor="#cee7f9" style=filled]
+	0 -> 1 [xlabel="≤ 0.5207"]
+	2 [label="T-TPT_rMax" fillcolor="#46a3e7" style=filled]
+	1 -> 2 [xlabel="≤ -1.6976"]
+	3 [label="T-JUS-CKP_rSEM" fillcolor="#fcf2ea" style=filled]
+	2 -> 3 [xlabel="≤ 0.8789"]
+	4 [label="Class 4.0:
 	P(0.0) = 0.5
-	P(3.0) = 0.5
-samples: 1641" fillcolor="#fffdfc" style=filled]
-	17 -> 18 [xlabel="≤ 1.6176"]
-	19 [label="P-JUS-CKGL_rMin" fillcolor="#3a9ee5" style=filled]
-	17 -> 19 [xlabel="> 1.6176"]
-	20 [label="P-JUS-CKGL_rSEM" fillcolor="#e5823a" style=filled]
-	19 -> 20 [xlabel="≤ 1.6675"]
-	23 [label="T-JUS-CKP_rSEM" fillcolor="#e5823b" style=filled]
-	19 -> 23 [xlabel="> 1.6675"]
-	26 [label="P-JUS-CKGL_rMin" fillcolor="#f9e4d5" style=filled]
-	0 -> 26 [xlabel="> 0.2643"]
-	27 [label="P-JUS-CKGL_rMin" fillcolor="#e5813a" style=filled]
-	26 -> 27 [xlabel="≤ 0.2727"]
-	28 [label="Class 3.0:
-	P(0.0) = 0.1
-	P(3.0) = 0.9
-samples: 1642" fillcolor="#62b1ea" style=filled]
-	27 -> 28 [xlabel="≤ -2.3416"]
-	29 [label="P-PDG_rSEM" fillcolor="#e58139" style=filled]
-	27 -> 29 [xlabel="> -2.3416"]
-	30 [label="Class 0.0:
-	P(0.0) = 0.7
-	P(3.0) = 0.3
-samples: 1299" fillcolor="#f7d6bf" style=filled]
-	29 -> 30 [xlabel="≤ 0.0602"]
-	31 [label=QGL_rSEM fillcolor="#3e9fe6" style=filled]
-	29 -> 31 [xlabel="> 0.0602"]
-	34 [label="T-JUS-CKP_rSEM" fillcolor="#4fa8e8" style=filled]
-	26 -> 34 [xlabel="> 0.2727"]
-	35 [label="Class 0.0:
+	P(4.0) = 0.5
+samples: 1795" fillcolor="#fdf5ef" style=filled]
+	3 -> 4 [xlabel="≤ 0.0225"]
+	5 [label="P-MON-CKP_rmean" fillcolor="#3c9ee5" style=filled]
+	3 -> 5 [xlabel="> 0.0225"]
+	16 [label="P-JUS-CKGL_rMin" fillcolor="#4fa8e8" style=filled]
+	2 -> 16 [xlabel="> 0.8789"]
+	17 [label="T-JUS-CKP_rMax" fillcolor="#fdf6f0" style=filled]
+	16 -> 17 [xlabel="≤ -1.9079"]
+	24 [label="T-JUS-CKP_rMax" fillcolor="#fefcfa" style=filled]
+	16 -> 24 [xlabel="> -1.9079"]
+	45 [label="T-TPT_rMax" fillcolor="#44a3e6" style=filled]
+	1 -> 45 [xlabel="> -1.6976"]
+	46 [label="P-JUS-CKGL_rMin" fillcolor="#98ccf1" style=filled]
+	45 -> 46 [xlabel="≤ 0.2517"]
+	47 [label="P-JUS-CKGL_rMin" fillcolor="#f9fcfe" style=filled]
+	46 -> 47 [xlabel="≤ 1.3008"]
+	62 [label="P-JUS-CKGL_rMin" fillcolor="#a8d4f4" style=filled]
+	46 -> 62 [xlabel="> 1.3008"]
+	77 [label="P-TPT_rMin" fillcolor="#41a1e6" style=filled]
+	45 -> 77 [xlabel="> 0.2517"]
+	78 [label="P-JUS-CKGL_rmean" fillcolor="#f0b58b" style=filled]
+	77 -> 78 [xlabel="≤ -1.8801"]
+	107 [label="P-JUS-CKGL_rMin" fillcolor="#efaf82" style=filled]
+	77 -> 107 [xlabel="> -1.8801"]
+	150 [label="P-JUS-CKGL_rmean" fillcolor="#399de5" style=filled]
+	0 -> 150 [xlabel="> 0.5207"]
+	151 [label="P-MON-CKP_rmean" fillcolor="#4aa5e7" style=filled]
+	150 -> 151 [xlabel="≤ -0.7288"]
+	152 [label="T-TPT_rMax" fillcolor="#fbece1" style=filled]
+	151 -> 152 [xlabel="≤ 1.1237"]
+	153 [label="Class 0.0:
 	P(0.0) = 1.0
-samples: 449" fillcolor="#e58139" style=filled]
-	34 -> 35 [xlabel="≤ 0.104"]
-	36 [label="P-JUS-CKGL_rMin" fillcolor="#48a4e7" style=filled]
-	34 -> 36 [xlabel="> 0.104"]
-	37 [label="Class 3.0:
-	P(0.0) = 0.1
-	P(3.0) = 0.9
-samples: 620" fillcolor="#6ab5eb" style=filled]
-	36 -> 37 [xlabel="≤ 0.9607"]
-	38 [label=QGL_rMin fillcolor="#f2c09d" style=filled]
-	36 -> 38 [xlabel="> 0.9607"]
+	P(4.0) = 0.0
+samples: 950" fillcolor="#45a3e7" style=filled]
+	152 -> 153 [xlabel="≤ 1.3855"]
+	154 [label="Class 0.0:
+	P(0.0) = 0.7
+	P(4.0) = 0.3
+samples: 905" fillcolor="#b7dbf6" style=filled]
+	152 -> 154 [xlabel="> 1.3855"]
+	155 [label="T-JUS-CKP_rSEM" fillcolor="#56abe9" style=filled]
+	151 -> 155 [xlabel="> 1.1237"]
+	156 [label="Class 0.0:
+	P(0.0) = 1.0
+samples: 322" fillcolor="#399de5" style=filled]
+	155 -> 156 [xlabel="≤ 0.0787"]
+	157 [label="Class 0.0:
+	P(0.0) = 0.8
+	P(4.0) = 0.2
+samples: 596" fillcolor="#7dbfee" style=filled]
+	155 -> 157 [xlabel="> 0.0787"]
+	158 [label="T-JUS-CKP_rMin" fillcolor="#399de5" style=filled]
+	150 -> 158 [xlabel="> -0.7288"]
+	159 [label="T-JUS-CKP_rmean" fillcolor="#4aa5e7" style=filled]
+	158 -> 159 [xlabel="≤ 0.3112"]
+	160 [label="P-JUS-CKGL_rMin" fillcolor="#3ea0e6" style=filled]
+	159 -> 160 [xlabel="≤ -0.1773"]
+	171 [label="P-JUS-CKGL_rSEM" fillcolor="#fefbf8" style=filled]
+	159 -> 171 [xlabel="> -0.1773"]
+	178 [label="T-JUS-CKP_rMin" fillcolor="#399de5" style=filled]
+	158 -> 178 [xlabel="> 0.3112"]
+	179 [label="Class 0.0:
+	P(0.0) = 0.8
+	P(4.0) = 0.2
+samples: 448" fillcolor="#90c8f0" style=filled]
+	178 -> 179 [xlabel="≤ 0.9323"]
+	180 [label="T-TPT_rSEM" fillcolor="#3a9ee5" style=filled]
+	178 -> 180 [xlabel="> 0.9323"]
 }
