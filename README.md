@@ -14,7 +14,7 @@ This is a fork of the [Petrobrass 3W dataset](README_original.md).
     
   Two main assumptions has been made prior to fitting model to the data:  
   *  Minute averages instead of instantaneous (per second) data are used. It seems that the dynamics of the process are not so fast.
-  *  The situations can only be assessed looking at a time window of around 15 minutes (2D time x feature).  
+  *  The situations can only be assessed looking at a time window of around 30 minutes (2D time x feature).  
   
 A Data Generator class (CustomDataGen) has been developed for every type of model.  
 ### Modeling  
@@ -33,7 +33,7 @@ A Data Generator class (CustomDataGen) has been developed for every type of mode
   
   An Hoeffding Tree Classifier has been used. Is a multiclass classifier.  
   
-  A drift detector has been introduced in the stream learning process trying to detect concept drift in the flow of data that advices to reinitialize the model been trained. See [river_window_model](tfm/river_tfm5_4.ipynb).
+  A drift detector has been introduced in the stream learning process trying to detect concept drift in the flow of data that advices to reinitialize the model been trained. See [river_window_model](tfm/river_tfm5_4.ipynb) ([html](https://htmlpreview.github.io/?https://github.com/BaltiBoix/3W_TFM/blob/master/tfm/river_tfm5_4.html)).
  
  ### Docs
    [The final TFM report](tfm/Docs/TFM.pdf) in PDF format (Spanish).  
